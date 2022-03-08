@@ -1,0 +1,39 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div.calc{
+    width: 30%;
+    height: 70vh;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 15px;
+}
+div.display{
+    margin: 5% 5% 0;
+    border: 1px solid black;
+    height: 25%;
+    border-radius: 15px;
+}
+div.display p.resultado{
+    width: 90%;
+    text-align: right;
+    font-size: 2em;
+    font-weight: bolder;
+}
+div.teclas{
+    margin: 5%;
+    height: 60%;
+    border-radius: 15px;
+}
+div.teclas table{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+}
+div.teclas td{
+    border: 1px solid black;
+    width: 20%;
+    border-radius: 15px;
+}
