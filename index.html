@@ -8,42 +8,47 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <h1>Calculadora em JavaScript</h3>
     <div class="calc">
         <div class="display">
             <p class="resultado">
-                000000.00
+                0
             </p>
         </div>
         <div class="teclas">
             <table>
                 <tr>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>CE</td>
-                    <td>&laquo;</td>   
+                    <td onclick="calculadora(7)">7</td>
+                    <td onclick="calculadora(8)">8</td>
+                    <td onclick="calculadora(9)">9</td>
+                    <td onclick="calculadora('reset')">CE</td>
+                    <td onclick="calculadora('apagar')">&laquo;</td>   
                 </tr>
                 <tr>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>+</td>
-                    <td rowspan="3">=</td>   
+                    <td onclick="calculadora(4)">4</td>
+                    <td onclick="calculadora(5)">5</td>
+                    <td onclick="calculadora(6)">6</td>
+                    <td onclick="calculadora('+')">+</td>
+                    <td onclick="calculadora('=')" rowspan="3">=</td>   
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>-</td>   
+                    <td onclick="calculadora(1)">1</td>
+                    <td onclick="calculadora(2)">2</td>
+                    <td onclick="calculadora(3)">3</td>
+                    <td onclick="calculadora('-')">-</td>   
                 </tr>
                 <tr>
-                    <td>%</td>
-                    <td>/</td>
-                    <td>*</td>
-                    <td>.</td>   
+                    <td onclick="calculadora('%')">%</td>
+                    <td onclick="calculadora('/')">/</td>
+                    <td onclick="calculadora('*')">*</td>
+                    <td onclick="calculadora('.')">.</td>   
                 </tr>
             </table>
         </div>
     </div>
+    <footer>
+        <p>Site Criado por <a href="https://github.com/matheusaliberto" target="_blank">Matheus Francisco</a>.</p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
