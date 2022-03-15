@@ -1,18 +1,36 @@
 function exibir(x){
-    var ftela =document.getElementById('resultado')
-    ftela.innerHTML += x
+    var tela =document.getElementById('resultado')
+    tela.innerHTML += x
 }
 function apagar(){
-    window.alert('em construção')
+    var tela = document.getElementById('resultado')
+    var telavalor = document.getElementById('resultado').firstChild.nodeValue
+    var teladel = telavalor.slice(0,-1)
+
+    tela.innerHTML = teladel
 }
 function resetar(){
     var tela =document.getElementById('resultado')
-    tela.innerHTML = "0"
+    tela.innerHTML = ""
 }
 function calcular(){
-    var ftela = document.getElementById('resultado')
-    var tela = ftela.value
-    var tela2 = Array.from(tela);
-    window.alert(tela2)
-    window.alert(typeof tela2[0])
+    var tela = document.getElementById('resultado')
+    var telavalor =document.getElementById('resultado').firstChild.nodeValue
+    var valorarray = telavalor.split('')
+
+    for(let i=0;i<valorarray.length;i++){
+        
+        switch(valorarray[i]){
+            case '+':
+                //cond
+            case '-':
+                //cond
+            case '/':
+                //cond
+            case '*':
+                //cond
+            default:
+                    
+        }
+    }
 }
