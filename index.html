@@ -11,35 +11,38 @@
     <h1>Calculadora em JavaScript</h3>
     <div class="calc">
         <div class="display">
-            <p id="resultado"></p>
+            <p id="resultado">a</p>
         </div>
         <div class="teclas">
             <table>
                 <tr>
-                    <td onclick="exibir(7)">7</td>
-                    <td onclick="exibir(8)">8</td>
-                    <td onclick="exibir(9)">9</td>
-                    <td onclick="resetar()">CE</td>
-                    <td onclick="apagar()">&laquo;</td>   
+                    <td><button  onclick="exibir('7')">7</button></td>
+                    <td><button  onclick="exibir('8')">8</button></td>
+                    <td><button  onclick="exibir('9')">9</button></td>
+                    <td><button  onclick="exibir('+')">+</button></td>
+                    <td><button  onclick="apagar()">&laquo;</button></td>   
                 </tr>
                 <tr>
-                    <td onclick="exibir(4)">4</td>
-                    <td onclick="exibir(5)">5</td>
-                    <td onclick="exibir(6)">6</td>
-                    <td onclick="exibir('+')">+</td>
-                    <td onclick="calcular()" rowspan="3">=</td>   
+                    <td><button  onclick="exibir('4')">4</button></td>
+                    <td><button  onclick="exibir('5')">5</button></td>
+                    <td><button  onclick="exibir('6')">6</button></td>
+                    <td><button  onclick="exibir('-')">-</button></td>
+                    <td><button  onclick="resetar()">CE</button></td>
+                       
                 </tr>
                 <tr>
-                    <td onclick="exibir(1)">1</td>
-                    <td onclick="exibir(2)">2</td>
-                    <td onclick="exibir(3)">3</td>
-                    <td onclick="exibir('-')">-</td>   
+                    <td><button  onclick="exibir('1')">1</button></td>
+                    <td><button  onclick="exibir('2')">2</button></td>
+                    <td><button  onclick="exibir('3')">3</button></td>
+                    <td><button  onclick="exibir('/')">/</button></td>
+                    <td rowspan="2"><button  onclick="calcular()">=</button></td>   
                 </tr>
                 <tr>
-                    <td onclick="exibir('0')">0</td>
-                    <td onclick="exibir('/')">/</td>
-                    <td onclick="exibir('*')">*</td>
-                    <td onclick="exibir('.')">.</td>   
+
+                    <td colspan="2"><button  onclick="exibir('0')">0</button></td>
+                    <td><button  onclick="exibir('.')">.</button></td>
+                    <td><button  onclick="exibir('*')">*</button></td>
+
                 </tr>
             </table>
         </div>
