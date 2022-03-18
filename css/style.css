@@ -1,11 +1,11 @@
-body{font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: rgb(255, 236, 208); background-image: radial-gradient(circle, rgb(0, 225, 255), rgb(0, 0, 0));}
+body{font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: rgb(0, 0, 0); background-image: radial-gradient(circle, rgb(0, 225, 255), rgb(0, 0, 0));}
 h1{text-align: center; font-size: 2em; margin:2% 0; color: white;}
 /*TOTAL*/
 @media screen and (min-width:600px){
     h1{text-align: center; font-size: 3em; margin:2% 0; color: white;}
-    div.calc{max-width: 30% !important;}
+    div.calc{max-width: 30% !important; height: 70vh;}
 }
-div.calc{min-width: 30%; max-width: 70%; height: 70vh;border: 3px solid rgb(255, 255, 255);margin: auto;border-radius: 15px; box-shadow: 2px 2px 15px; background-color: black;}
+div.calc{min-width: 30%; max-width: 70%; height: 55vh;border: 3px solid rgb(255, 255, 255);margin: auto;border-radius: 15px; box-shadow: 2px 2px 15px; background-color: black;}
 
 /*DISPLAY*/
 div.display{margin: 5% 5% 0;border: 1px solid rgb(255, 255, 255);height: 25%; border-radius: 15px; background-color: rgba(0, 225, 255, 0.6); text-align: right;font-size: 2em;font-weight: bolder; color: white;}
